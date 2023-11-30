@@ -13,3 +13,22 @@ jobs:
       - uses: ./.github/actions/assign-issue
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                      - nombre: cargar un artefacto de construcción
+  usos: acciones/upload-artifact@v3.1.3
+  con:
+    # Nombre del artefacto
+    nombre: # opcional, el valor predeterminado es artefacto
+    # Un archivo, directorio o patrón comodín que describe qué cargar
+    camino:
+    # El comportamiento deseado si no se encuentran archivos utilizando la ruta proporcionada.
+Opciones Disponibles:
+  advertir: genera una advertencia pero no falla la acción
+  error: falla la acción con un mensaje de error
+  ignorar: no genera ninguna advertencia ni error, la acción no falla
+
+    if-no-files-found: # opcional, el valor predeterminado es advertir
+    # Duración tras la cual el artefacto caducará en días. 0 significa utilizar la retención predeterminada.
+Mínimo 1 día. Máximo 90 días a menos que se cambie desde la página de configuración del repositorio.
+
+    días de retención: # opcional
+          
